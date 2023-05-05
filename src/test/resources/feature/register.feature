@@ -21,14 +21,11 @@ Feature: Title of your feature
   I want to use this template for my feature file
 
   @tag1
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
+  Scenario: click Get Started
+    Given The user opens DS Algo portal link
+    When The user clicks the "Get Started" button
+    Then The user should be redirected to homepage
+    
 
   @tag2
   Scenario Outline: Title of your scenario outline

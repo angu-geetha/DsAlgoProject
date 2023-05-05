@@ -1,12 +1,36 @@
 package stepdefinition;
 
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeTest;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import portal.IndexPage;
 
 public class Register_SD {
-	@Given("I want to write a step with precondition")
-	public void i_want_to_write_a_step_with_precondition() {
+	
+	WebDriver chromedriver;
+	final String homePageUrl = "https://dsportalapp.herokuapp.com/" ;
+	IndexPage indexPage ;
+	
+	
+	public  Register_SD() {
+		 chromedriver = new ChromeDriver();
+	
+		 chromedriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		 chromedriver.manage().window().maximize();
+		 indexPage = new IndexPage(chromedriver);
+		
+		
+		
+	} 
+	
+	@Given("The user opens DS Algo portal link")
+	public void test001() {
 	    // Write code here that turns the phrase above into concrete actions
 	    
 	}
