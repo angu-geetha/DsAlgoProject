@@ -13,6 +13,7 @@ public class IndexPage {
 	}
 	public void openDsAlgoPage() {
 		chromedriver.get(homePageUrl);
+		
 	}
 
 	public IndexPage(WebDriver chromedriver) {
