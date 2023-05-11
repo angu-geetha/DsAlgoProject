@@ -79,6 +79,7 @@
 			<artifactId>cucumber-junit</artifactId>
 			<version>7.11.2</version>
 			<scope>test</scope>
+<<<<<<< HEAD
 		</dependency>
 		
 		
@@ -120,4 +121,8 @@
 </dependency>
 
 	</dependencies>
+=======
+		</dependency>		
+  </dependencies>
+>>>>>>> branch 'master' of https://github.com/angu-geetha/DsAlgoProject.git
 </project>

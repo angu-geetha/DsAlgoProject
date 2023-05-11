@@ -12,7 +12,7 @@ package runner;
 	@CucumberOptions(
 		plugin = {"pretty", "html:target/dsalgo.html"}, //reporting purpose
 		monochrome=false,  //console output color
-		tags = "@tag", //tags from feature file
+		tags = "@tag5" , //tags from feature file
 		features = {"src/test/resources/feature"}, //location of feature files
 		glue= "stepdefinition") //location of step definition files
   
